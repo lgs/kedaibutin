@@ -174,77 +174,165 @@
       <div class="row">
         <!-- Begin: Main -->
         <main class="col-md-9 ml-sm-auto col-lg-9 px-md-4">
-          <h1 class="h2 text-secondary text-center border-bottom pb-3">Add Material</h1>
-          <div class="table-responsive d-flex justify-content-center mt-4">       
-            <!-- Begin: Form Add Material -->
-            <form class="row g-2 needs-validation w-50" novalidate>
-              <div class="position-relative">
-                <label for="validationTooltip01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
-                <div class="valid-tooltip">
-                  Looks good!
+          <h1 class="h2 text-secondary text-center border-bottom pb-3">Stock-in</h1>      
+          <!-- Begin: Form Stock-in -->
+          <div class="d-flex justify-content-between bg-light">
+            <div class="col-4 p-4 border">
+              <form>
+                <div class="d-flex justify-content-between mb-2 input-group-sm">
+                  <div class="col-auto">
+                    <label for="inputDate6" class="col-form-label">Date</label>
+                  </div>
+                  <div class="col-auto w-75 input-group-sm">
+                    <input type="Date" id="inputDate6" class="form-control" aria-describedby="DateHelpInline">
+                  </div>
                 </div>
-              </div>
-              <div class="position-relative">
-                <label for="validationTooltip04" class="form-label">Supplier</label>
-                <select class="form-select" id="validationTooltip04" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>Option 1</option>
-                  <option>Option 2</option>
-                  <option>Option 3</option>
-                </select>
-                <div class="invalid-tooltip">
-                  Please select a valid state.
+                <div class="d-flex justify-content-between mb-2">
+                  <div class="col-auto">
+                    <label for="inputDate6" class="col-form-label">User</label>
+                  </div>
+                  <div class="col-auto w-75 input-group-sm">
+                    <input type="text" id="inputDate6" class="form-control" aria-describedby="DateHelpInline" value="Administator" disabled>
+                  </div>
                 </div>
-              </div>
-              <div class="position-relative">
-                <label for="validationTooltip04" class="form-label">Category</label>
-                <select class="form-select" id="validationTooltip04" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>Option 1</option>
-                  <option>Option 2</option>
-                  <option>Option 3</option>
-                </select>
-                <div class="invalid-tooltip">
-                  Please select a valid state.
+                <div class="d-flex justify-content-between">
+                  <div class="col-auto">
+                    <label for="inputDate6" class="col-form-label">Invoice</label>
+                  </div>
+                  <div class="col-auto w-75 input-group-sm">
+                    <input type="text" id="inputDate6" class="form-control" aria-describedby="DateHelpInline" value="KB020919970001" disabled>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-5 position-relative">
-                <label for="validationTooltip03" class="form-label">Price</label>
-                <div class="input-group mb-3">
-                  <span class="input-group-text">Rp</span>
-                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                </div>                
-                <div class="invalid-tooltip">
-                  Please provide a valid city.
+              </form>
+            </div>
+            <div class="col-4 p-3 border">
+              <form>
+                <div class="d-flex justify-content-between mb-2 input-group-sm">
+                  <div class="col-auto">
+                    <label for="inputDate6" class="col-form-label">Date</label>
+                  </div>
+                  <div class="col-auto w-75 input-group input-group-sm mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    <button class="btn btn-outline-primary btn-sm">
+                      <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4 position-relative">
-                <label for="validationTooltip04" class="form-label">Unit</label>
-                <select class="form-select" id="validationTooltip04" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>Option 1</option>
-                  <option>Option 2</option>
-                  <option>Option 3</option>
-                </select>
-                <div class="invalid-tooltip">
-                  Please select a valid state.
+                <div class="d-flex justify-content-between mb-2">
+                  <div class="col-auto">
+                    <label for="inputDate6" class="col-form-label">Quantity</label>
+                  </div>
+                  <div class="col-auto w-75 input-group-sm">
+                    <input type="number" id="inputDate6" class="form-control" aria-describedby="DateHelpInline" value="1">
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-3 position-relative">
-                <label for="validationTooltip05" class="form-label">Quantity</label>
-                <input type="number" class="form-control" id="validationTooltip05" value="0" disabled>
-                <div class="invalid-tooltip">
-                  Please provide a valid zip.
+                <div class="d-flex flex-row-reverse">
+                  <button class="btn btn-outline-primary btn-sm">Add to list</button>
                 </div>
+              </form>
+            </div>
+            <div class="col-4 p-3 border">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 8rem"></textarea>
+                <label for="floatingTextarea2">Notes</label>
               </div>
-              <div class="col-12 text-right mt-4">
-                <a class="btn btn-secondary" href="index.html">Cancel</a>
-                <input class="btn btn-primary input" type="submit" value="Submit">
-              </div>
-            </form>
-            <!-- End: Form Add Material --> 
+            </div>
           </div>
+          <div class="bg-light border p-4">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Barcode</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Unit</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>AM001</td>
+                  <td>White Board Marker</td>
+                  <td>Rp 50.000</td>
+                  <td>Box</td>
+                  <td>1</td>
+                  <td style="width: 12rem;">
+                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
+                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>AM001</td>
+                  <td>White Board Marker</td>
+                  <td>Rp 50.000</td>
+                  <td>Box</td>
+                  <td>1</td>
+                  <td style="width: 12rem;">
+                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
+                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>AM001</td>
+                  <td>White Board Marker</td>
+                  <td>Rp 50.000</td>
+                  <td>Box</td>
+                  <td>1</td>
+                  <td style="width: 12rem;">
+                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
+                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>AM001</td>
+                  <td>White Board Marker</td>
+                  <td>Rp 50.000</td>
+                  <td>Box</td>
+                  <td>1</td>
+                  <td style="width: 12rem;">
+                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
+                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>AM001</td>
+                  <td>White Board Marker</td>
+                  <td>Rp 50.000</td>
+                  <td>Box</td>
+                  <td>1</td>
+                  <td style="width: 12rem;">
+                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
+                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>AM001</td>
+                  <td>White Board Marker</td>
+                  <td>Rp 50.000</td>
+                  <td>Box</td>
+                  <td>1</td>
+                  <td style="width: 12rem;">
+                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
+                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="d-flex flex-row-reverse bg-light border p-4">
+            <input type="submit" class="btn btn-primary btn-sm ml-4" value="Submit">
+            <input type="submit" class="btn btn-warning btn-sm ml-4" value="Reset">
+            <input type="submit" class="btn btn-secondary btn-sm" value="Cancel">            
+          </div>
+          <!-- End: Form Stock-in -->
         </main>
         <!-- End: Main -->
         <!-- Begin: Sidebar -->
