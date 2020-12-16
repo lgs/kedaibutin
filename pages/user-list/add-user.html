@@ -148,9 +148,9 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li><a href="../cashier/" class="dropdown-item">Cashier</a></li>
-                <li><a href="#" class="dropdown-item">Raw Material</a></li>
+                <li><a href="../raw-material/" class="dropdown-item">Raw Material</a></li>
                 <li><a href="../product-list/" class="dropdown-item">Product List</a></li>
-                <li><a href="../user-list/" class="dropdown-item">User List</a></li>
+                <li><a href="#" class="dropdown-item">User List</a></li>
                 <li><a href="../sellbuy-report/" class="dropdown-item">Sell/Buy Report</a></li>
               </ul>
             </li>
@@ -174,114 +174,53 @@
       <div class="row">
         <!-- Begin: Main -->
         <main class="col-md-9 ml-sm-auto col-lg-9 px-md-4">
-          <h1 class="h2 text-secondary text-center border-bottom pb-3">Units</h1>
-          <div class="table-responsive">
-            <div class="d-flex justify-content-between mb-3">
-              <form class="d-flex mr-auto">
-                <input class="form-control form-control-sm" type="text" placeholder="Search material name" aria-label=".form-control-sm example">
-                <button class="btn btn-outline-primary btn-sm mr-5" type="submit"><i class="fas fa-search"></i></button>
-              </form>
-              <a class="btn btn-outline-primary" href="add-unit.html"><i class="fas fa-plus"></i> Add Unit</a>
-            </div>        
-            <!-- Begin: Table Material -->
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Lorem</td>
-                  <td style="width: 11rem;">
-                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
-                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Lorem</td>
-                  <td style="width: 11rem;">
-                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
-                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Lorem</td>
-                  <td style="width: 11rem;">
-                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
-                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Lorem</td>
-                  <td style="width: 11rem;">
-                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
-                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Lorem</td>
-                  <td style="width: 11rem;">
-                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
-                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Lorem</td>
-                  <td style="width: 11rem;">
-                    <a class="btn btn-sm btn-outline-primary" href="#"><i class="far fa-edit"></i> Change</a>
-                    <a class="btn btn-sm btn-outline-danger" href="#" onclick="return confirm('Are you sure you want to delete this item?');"><i class="far fa-trash-alt"></i> Delete</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- End: Table Material -->
-            <div class="d-flex justify-content-between mb-3">
-              <strong class="text-secondary">Showing 1 to 6 of 6 entries</strong>
-              <nav aria-label="...">
-                <ul class="pagination pagination-sm">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
-            </div> 
+          <h1 class="h2 text-secondary text-center border-bottom pb-3">Add User</h1>
+          <div class="table-responsive d-flex justify-content-center mt-4">       
+            <!-- Begin: Form Add User -->
+            <form class="row g-2 needs-validation w-50" novalidate>
+              <div class="position-relative">
+                <label for="name" class="form-label">Name *</label>
+                <input type="text" class="form-control" id="name" placeholder="name" required>
+              </div>
+              <div class="position-relative">
+                <label for="username" class="form-label">Username *</label>
+                <input type="text" class="form-control" id="username" placeholder="username" required>
+              </div>
+              <div class="position-relative">
+                <label for="password" class="form-label">Password *</label>
+                <input type="password" class="form-control" id="password" placeholder="password" required>
+              </div>
+              <div class="position-relative">
+                <label for="confpass" class="form-label">Confirm Password *</label>
+                <input type="password" class="form-control" id="confpass" placeholder="Confirm password" required>
+              </div>
+              <div class="position-relative">
+                <label for="address" class="form-label">Address *</label>
+                <textarea name="address" id="address" class="form-control"></textarea>
+              </div>
+              <div class="position-relative">
+                <label for="level">Level *</label>
+                <select name="level" id="level" class="form-control">
+                  <option value="">- Choose - </option>
+                  <option value="1">Admin</option>
+                  <option value="2">Kasir</option>
+                </select>
+              </div>
+              <div class="col-12 text-right mt-4">
+                <a class="btn btn-secondary" href="index.html">Cancel</a>
+                <input class="btn btn-primary input" type="submit" value="Submit">
+              </div>
+            </form>
+            <!-- End: Form Add User --> 
           </div>
         </main>
         <!-- End: Main -->
         <!-- Begin: Sidebar -->
         <div class="col-md-3 col-lg-3 d-md-block sidebar collapse border-left border-5">
-          <h2 class="fw-bold border-bottom pb-2 text-center text-secondary">Raw Material</h2>
+          <h2 class="fw-bold border-bottom pb-2 text-center text-secondary">User List</h2>
           <!-- Begin: Sidebar Menu -->
           <div class="list-group mb-2">
-            <a href="index.html" class="list-group-item list-group-item-action list-group-item-secondary text-center mb-1">Material List</a>
-            <div class="d-flex justify-content-center">
-              <span class="w-50 mr-1"><a href="categories.html" class="list-group-item list-group-item-action list-group-item-secondary text-center mb-1">Categories</a></span>
-              <span class="w-50 ml-1"><a href="units.html" class="list-group-item list-group-item-action list-group-item-secondary text-center mb-1" title="Add unit material">Units</a></span>
-            </div>
-            <a href="suppliers.html" class="list-group-item list-group-item-action list-group-item-secondary text-center mb-1">Suppliers</a>
-            <a href="stock-in.html" class="list-group-item list-group-item-action list-group-item-secondary text-center mb-1">Stock-in</a>
-            <a href="stock-out.html" class="list-group-item list-group-item-action list-group-item-secondary text-center mb-1">Stock-out</a>
-            <div class="d-flex justify-content-center">
-              <span class="w-50 mr-1"><a href="stock-missing.html" class="list-group-item list-group-item-action list-group-item-secondary text-center mb-1">Stock Missing</a></span>
-              <span class="w-50 ml-1"><a href="stock-found.html" class="list-group-item list-group-item-action list-group-item-secondary text-center mb-1" title="Add unit material">Stock Found</a></span>
-            </div>
+            <a href="index.html" class="list-group-item list-group-item-action list-group-item-secondary text-center mb-1">Users</a>
           </div>
           <!-- End: Sidebar menu -->
 
@@ -289,6 +228,24 @@
           <ul class="list-group mb-3">
             <li class="list-group-item text-center text-secondary">
               <strong>History Activity</strong>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0 text-muted">Administator</h6>
+                </div>
+                <small class="text-muted">10:00 ~ 02/09/20</small>
+              </div>
+              <small class="text-muted">lorem ipsum dolor sit amet amit.....</small>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0 text-muted">Administator</h6>
+                </div>
+                <small class="text-muted">10:00 ~ 02/09/20</small>
+              </div>
+              <small class="text-muted">lorem ipsum dolor sit amet amit.....</small>
             </li>
             <li class="list-group-item">
               <div class="d-flex justify-content-between lh-sm">
